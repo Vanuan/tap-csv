@@ -53,7 +53,7 @@ def sync_file(fileInfo):
         return
 
     logger.info("Syncing entity '" + fileInfo["entity"] + "' from file: '" + fileInfo["file"] + "'")
-    with open(fileInfo["file"], "r") as f:
+    with open(fileInfo["file"], "r", encoding=fileInfo["encoding"]) as f:
         needsHeader = True
         reader = csv.reader(f)
         for row in reader:
