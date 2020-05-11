@@ -12,7 +12,7 @@ setup(name='tap-csv',
       install_requires=[
           'singer-python>=5.9.0',
           'backoff==1.8.0',
-          'requests==2.21.0',
+          'requests==2.23.0',
       ],
       entry_points='''
           [console_scripts]
